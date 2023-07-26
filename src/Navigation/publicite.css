@@ -1,0 +1,13 @@
+.black-bg{height:400px;
+    background-color:#000; display: flex;justify-content: space-between;align-items: center;}
+    .black-bg{color:#fff;
+    padding:3rem;position:relative;}
+    .black-bg h1{font-size:44px; text-align: start; color: red;margin-left: 10%;}
+    .black-bg p{font-size:25px;text-align: start;margin-left:10%;}
+    #tv{width: 60%;height: 130%;}
+    #ntflx{
+        width: 35%;
+    }
+#pub{
+    margin-bottom: 8%;
+}

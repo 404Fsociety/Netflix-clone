@@ -1,0 +1,66 @@
+.list{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 3%;
+    text-align: start;
+}
+.listTile{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 1%;
+}
+
+.containerSlide{
+display: flex;
+width: max-content;
+margin-top: 0.5%;
+overflow:auto;
+}
+.containerSlide::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #f5f5f54d;
+}
+.containerSlide::-webkit-scrollbar
+{
+	height: 5px;
+	background-color: #e51a1a00;
+}
+.containerSlide::-webkit-scrollbar-thumb
+{
+	background-color: #ff0202;
+	border: 0%;
+    border-radius: 60%;
+}
+.imgSlide{
+    width: 18%;
+    height: 130px;
+    margin-right: 1%;
+}
+.slideArrow{
+    font-size: large;
+    height: 100%;
+    color: rgba(255, 0, 0, 0.877);
+    position: absolute;
+}
+.left{
+    left: 2%;
+}
+.right{
+    right: 2%;
+}
+.left:hover{
+    left: 0.5%;
+}
+.right:hover{
+    right: 0.5%;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.imgSlide:hover{
+    width: 300px;
+    height: 160px;
+}

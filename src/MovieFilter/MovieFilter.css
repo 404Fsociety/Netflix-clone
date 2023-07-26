@@ -1,0 +1,24 @@
+#form{
+    width: 40%;
+    margin-left: 5%;
+    background-color: rgba(156, 156, 156, 0.656);
+    border: rgba(127, 127, 127, 0.737);
+    height: 2.7rem;
+}
+
+#starsDiv{
+
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.label{
+    color: white;
+}
+#btn{
+    width: 40%;
+    margin-left: 5%;
+    text-align: start;
+}

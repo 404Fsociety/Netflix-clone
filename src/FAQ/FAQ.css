@@ -1,0 +1,15 @@
+#FAQ{
+    width: 60%;
+    margin: auto;
+}
+#title{
+    font-size: 45px;
+    font-weight:700;
+    color: white;
+    margin-bottom: 4%;
+}
+.typo{
+    background-color:rgb(82, 82, 82);
+    color: white;
+    
+}

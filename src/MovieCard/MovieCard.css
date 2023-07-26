@@ -1,0 +1,11 @@
+#card:hover {
+    transform: scale(1.02); /* Scale the element to 110% when hovered */
+    box-shadow: 0 4px 8px rgba(208, 60, 60, 0.745); /* Add a subtle box shadow when hovered */
+  }
+
+#link{
+    text-decoration: none;
+  }
+.imgCard{
+  height: 480px;
+}
