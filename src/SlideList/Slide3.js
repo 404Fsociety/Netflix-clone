@@ -2,11 +2,13 @@ import React from 'react'
 import './SlideList.css'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import Slide from 'react-reveal/Slide';
 
 export default function Slide3() {
   return (
     <div className='list'>
-        <span className='listTile'>Trending Now</span>
+      <Slide right>
+      <span className='listTile'>Trending Now</span>
         <div className='wrapper'>
         <ArrowBackIosIcon className='slideArrow left'fontSize='large'/>
             <div className='containerSlide'>
@@ -25,6 +27,7 @@ export default function Slide3() {
             </div>
         <ArrowForwardIosIcon className='slideArrow right'fontSize='large'/>
         </div>
+        </Slide>
     </div>
   )
 }

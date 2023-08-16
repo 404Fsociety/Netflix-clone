@@ -5,12 +5,17 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './FAQ.css'
+import Slide from 'react-reveal/Slide';
 
 export default function BasicAccordion() {
   return (
     <div id='FAQ'>
+        
+        <Slide top>
         <h1 id='title'>Frequently Asked Questions</h1>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -26,7 +31,10 @@ You can watch as much as you want, whenever you want without a single commercial
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -40,7 +48,10 @@ You can watch as much as you want, whenever you want without a single commercial
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -56,7 +67,10 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -70,7 +84,10 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -84,7 +101,10 @@ You can also download your favorite shows with the iOS, Android, or Windows 10 a
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white"}}>
+        </Slide>
+
+        <Slide bottom>
+        <Accordion style={{marginBottom:"0.7%",backgroundColor:" rgb(61, 61, 61)",color:"white",borderBottomColor:"rgba(255, 3, 3, 0.400)",borderBottomStyle:"solid"}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -100,6 +120,7 @@ Kids profiles come with PIN-protected parental controls that let you restrict th
           </Typography>
         </AccordionDetails>
       </Accordion>
+        </Slide>
     </div>
   );
 }

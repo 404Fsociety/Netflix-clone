@@ -1,12 +1,13 @@
 #FAQ{
     width: 60%;
     margin: auto;
+    margin-top: 15%;
 }
 #title{
     font-size: 45px;
     font-weight:700;
-    color: white;
-    margin-bottom: 4%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 8%;
 }
 .typo{
     background-color:rgb(82, 82, 82);

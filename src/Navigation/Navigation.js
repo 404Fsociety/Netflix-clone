@@ -15,27 +15,41 @@ import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import './Navigation.css'
+import { Link, useNavigate } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Button } from '@mui/material';
+
+
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
   };
+  const navigate = useNavigate();
+  const goBack = () => {
+		navigate(-1);
+	}
 
   return (
     <div>
        <Navbar collapseOnSelect fixed="top" expand="lg" className={isScrolled ?"p-2 mb-2 bg-black bg-gradient text-white":"p-2 mb-2 bg-transparent bg-gradient text-white"}bg="dark" data-bs-theme="dark" style={{padding:"0px",height:"60px",}}  >
       <Container style={{marginLeft:"25px",marginRight:"25px", padding:"0px"}}>
-        <Navbar.Brand href="#home">
-          <img style={{width:"100px",height:"35px"}} alt='logo' src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"/></Navbar.Brand>
+        <Navbar.Brand as={Link} to={'/'}>
+          <img style={{width:"100px",height:"35px"}} alt='logo' src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"/>
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" style={{fontSize:"16px"}}>
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">TV Shows</Nav.Link>
-            <Nav.Link href="#pricing">Movies</Nav.Link>
-            <Nav.Link href="#pricing">Latest</Nav.Link>
-            <Nav.Link href="#pricing">MyList</Nav.Link>
+            <Nav.Link as={Link} to={'/'}>Home</Nav.Link>
+            <Nav.Link as={Link} to={'/Tv_shows'}>TV Shows</Nav.Link>
+            <Nav.Link as={Link} to={'/Movies'}>Movies</Nav.Link>
+            <Nav.Link as={Link} to={'/MyList'}>MyList</Nav.Link>
+            <Nav.Link as={Link} to={'/Latest'}>Latest</Nav.Link>
+            <Button onClick={goBack} style={{marginLeft:"450px",height:"35px"}} variant="outlined" color="error"><ArrowBackIcon/> Back</Button>
+            <div > 
+            
+            </div>
             
           </Nav>
           <Nav style={{fontSize:"16px"}}>

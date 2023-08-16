@@ -2,7 +2,7 @@
     background-color:#000; display: flex;justify-content: space-between;}
     .black-bg{color:#fff;
     padding:3rem;position:relative;}
-    .black-bg h1{font-size:48px; text-align: start; margin-top: 70px; color: red;width: 80%}
+    .black-bg h1{font-size:48px; text-align: start;color: red;width: 80%}
     .black-bg p{font-size:30px;text-align: start;width: 70%;}
     #tv{width: 500px;}
     #ntflx{

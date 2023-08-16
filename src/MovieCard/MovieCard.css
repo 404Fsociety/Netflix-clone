@@ -1,11 +1,23 @@
 #card:hover {
     transform: scale(1.02); /* Scale the element to 110% when hovered */
-    box-shadow: 0 4px 8px rgba(208, 60, 60, 0.745); /* Add a subtle box shadow when hovered */
+    box-shadow: 0 5px 7px rgb(208, 60, 60); /* Add a subtle box shadow when hovered */
   }
 
-#link{
-    text-decoration: none;
-  }
 .imgCard{
-  height: 480px;
+  width: 310px;
+  height: 170px;
+}
+.trailer{
+  margin-right: 10px;
+  width: 100px;
+  font-size: 16px;
+  height: 40px;
+  color: black;
+  background-color:rgba(238, 204, 163, 0.818) ;
+  border-style: none;
+  font-family: sans-serif;
+}
+.trailer:hover{
+  background-color: rgba(201, 169, 130, 0.818);
+  color: rgb(80, 80, 80);
 }

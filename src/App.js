@@ -1,50 +1,35 @@
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
-import Carrousel from './Carrousel/Carrousel';
-import MobileApp from './MobileApp/MobileApp';
 import Navigation from './Navigation/Navigation';
-import Publicite from './Navigation/Publicite';
-import { moviesData } from './Data';
-import { useState } from 'react';
-import MovieList from './MovieList/MovieList';
 import Footr from './footer/Footr';
-import Welcome from './Navigation/Welcome';
-import AllScreens from './MobileApp/AllScreens';
-import AddMovie from './addMovie/AddMovie';
-import MovieFilter from './MovieFilter/MovieFilter';
-import FAQ from './FAQ/FAQ';
-import SlideList from './SlideList/SlideList';
-import Slide2 from './SlideList/Slide2';
-import Slide3 from './SlideList/Slide3';
-import Slide4 from './SlideList/Slide4';
-import Slide5 from './SlideList/Slide5';
+import Home from './Pages/Home';
+import Movies from './Pages/Movies';
+import TvShows from './Pages/Tv_shows';
+import MyList from './Pages/MyList';
+import Latest from './Pages/Latest';
+import MovieDetails from './Pages/MovieDetails';
 
 function App() {
-  const [movies,setmovies]=useState(moviesData)
+  const location = useLocation();
 
-  const add=(newmovie) =>{
-    setmovies([...movies,newmovie])
-  }
-  const [search,setsearch]=useState("")
+  // Scroll to the top when the location (route) changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
-  const[newRate,setnewRate]=useState(0)
   return (
     <div className="App">
-      <Navigation/>
-      <Welcome/>
-      <Publicite/>
-      <Carrousel/>
-      <AllScreens/>
-      <Slide2/>
-      <SlideList/>
-      <Slide5/>
-      <Slide3/>
-      <Slide4/>
-      <MovieFilter search={search} setsearch={setsearch} newRate={newRate} setnewRate={setnewRate}/>
-      <MovieList movies={movies} search={search} newRate={newRate}/>
-      <MobileApp/>
-      <AddMovie add={add}/>
-      <FAQ/>
-      <Footr/>
+      <Navigation />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Tv_shows' element={<TvShows />} />
+        <Route path='/Movies' element={<Movies />} />
+        <Route path='/MyList' element={<MyList />} />
+        <Route path='/Latest' element={<Latest />} />
+        <Route exact path="/movies/:id" element={<MovieDetails />} />
+      </Routes>
+      <Footr />
     </div>
   );
 }
